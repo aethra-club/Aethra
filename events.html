@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Aethra</title>
+    <link rel="stylesheet" href="Assets/css/events.css">
+    <link rel="stylesheet" href="Assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@300;400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/7C4DFF/FFFFFF?text=A">
+</head>
+
+<body>
+    <header class="aethra-header" role="navigation" aria-label="Main navigation">
+        <div class="aethra-header__wrap"> <a href="index.html" class="aethra-header__brand"> <img
+                    src="https://placehold.co/36x36/7C4DFF/FFFFFF?text=A" alt="Aethra Logo" class="aethra-header__logo">
+                <span class="aethra-header__name">Aethra</span> </a> <button class="aethra-header__toggle"
+                aria-controls="aethra-header-nav" aria-expanded="false"> <span class="aethra-header__toggle-bar"></span>
+                <span class="aethra-header__toggle-bar"></span> <span class="aethra-header__toggle-bar"></span> <span
+                    class="sr-only">Menu</span> </button>
+            <nav class="aethra-header__nav" id="aethra-header-nav">
+                <ul class="aethra-header__list">
+                    <li><a href="about.html" class="aethra-header__link">About Us</a></li>
+                    <li><a href="events.html" class="aethra-header__link">Events</a></li>
+                    <li><a href="resources.html" class="aethra-header__link">Resources</a></li>
+                    <li><a href="contactus.html" class="aethra-header__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section--dark events-hero" id="hero">
+            <div id="hero-backdrop"></div>
+            <div class="hero__inner">
+                <h1 class="hero__heading">Events & Workshops</h1>
+                <h5 class="hero__desc">
+                    Join our global community of builders and creators. Explore ongoing events, upcoming opportunities, and past highlights.
+                </h5>
+            </div>
+        </section>
+
+        <!-- Tab Navigation -->
+        <section class="section section--dark events-tabs-section animate-on-scroll">
+            <div class="container">
+                <div class="tabs-container">
+                    <div class="tabs-nav">
+                        <button class="tab-btn tab-btn--active" data-tab="events">Events</button>
+                        <button class="tab-btn" data-tab="workshops">Workshops</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="section section--light events-main-section animate-on-scroll" id="events-section">
+            <div class="container">
+                <!-- Ongoing Events -->
+                <div class="events-category" id="events-tab">
+                    <div class="category-header">
+                        <div class="section-label">Live Now</div>
+                        <h2 class="section__title">Ongoing Events</h2>
+                    </div>
+                    <div class="events-grid ongoing-grid">
+                        <div class="event-item event-item--live">
+                            <div class="event-status">LIVE</div>
+                            <div class="event-icon"><i class="fas fa-flash"></i></div>
+                            <h3 class="event-name">Global Hackathon 2025</h3>
+                            <p class="event-date">Ends: January 15, 2025</p>
+                            <p class="event-desc">Join thousands of builders competing for prizes and recognition.</p>
+                            <a href="#" class="btn btn--primary">Join Event</a>
+                        </div>
+                        <div class="event-item event-item--live">
+                            <div class="event-status">LIVE</div>
+                            <div class="event-icon"><i class="fas fa-code"></i></div>
+                            <h3 class="event-name">AI Workshop Series</h3>
+                            <p class="event-date">Ends: January 20, 2025</p>
+                            <p class="event-desc">Learn cutting-edge AI technologies from industry experts.</p>
+                            <a href="#" class="btn btn--primary">Enroll Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Events -->
+                    <div class="category-header upcoming-header">
+                        <div class="section-label-upcoming">Coming Soon</div>
+                        <h2 class="section__title">Upcoming Events</h2>
+                    </div>
+                    <div class="events-grid upcoming-grid">
+                        <div class="event-item event-item--upcoming">
+                            <div class="event-icon"><i class="fas fa-rocket"></i></div>
+                            <h3 class="event-name">Web3 Summit 2025</h3>
+                            <p class="event-date">February 15-17, 2025</p>
+                            <p class="event-desc">Explore the future of decentralized applications and blockchain.</p>
+                            <a href="#" class="btn btn--secondary">Register</a>
+                        </div>
+                        <div class="event-item event-item--upcoming">
+                            <div class="event-icon"><i class="fas fa-robot"></i></div>
+                            <h3 class="event-name">ML Bootcamp</h3>
+                            <p class="event-date">March 1-5, 2025</p>
+                            <p class="event-desc">Intensive 5-day workshop on machine learning fundamentals.</p>
+                            <a href="#" class="btn btn--secondary">Notify Me</a>
+                        </div>
+                        <div class="event-item event-item--upcoming">
+                            <div class="event-icon"><i class="fas fa-palette"></i></div>
+                            <h3 class="event-name">Design Sprint Challenge</h3>
+                            <p class="event-date">March 22-23, 2025</p>
+                            <p class="event-desc">Create innovative UI/UX solutions in this 2-day sprint.</p>
+                            <a href="#" class="btn btn--secondary">Register</a>
+                        </div>
+                    </div>
+
+                    <!-- Past Events -->
+                    <div class="category-header past-header">
+                        <div class="section-label-past">Archives</div>
+                        <h2 class="section__title">Past Events</h2>
+                    </div>
+                    <div class="events-grid past-grid">
+                        <div class="event-item event-item--past">
+                            <div class="event-icon"><i class="fas fa-star"></i></div>
+                            <h3 class="event-name">Aethra Hackathon 2024</h3>
+                            <p class="event-date">November 2024</p>
+                            <p class="event-desc">500+ participants from 25 countries built amazing projects.</p>
+                            <a href="#" class="btn btn--secondary">View Highlights</a>
+                        </div>
+                        <div class="event-item event-item--past">
+                            <div class="event-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3 class="event-name">Tech Basics Workshop</h3>
+                            <p class="event-date">October 2024</p>
+                            <p class="event-desc">1000+ students completed the fundamentals course.</p>
+                            <a href="#" class="btn btn--secondary">View Details</a>
+                        </div>
+                        <div class="event-item event-item--past">
+                            <div class="event-icon"><i class="fas fa-trophy"></i></div>
+                            <h3 class="event-name">Developer Summit 2024</h3>
+                            <p class="event-date">September 2024</p>
+                            <p class="event-desc">Industry leaders shared insights on emerging technologies.</p>
+                            <a href="#" class="btn btn--secondary">Watch Videos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshops Section -->
+                <div class="events-category hidden" id="workshops-tab">
+                    <div class="category-header">
+                        <div class="section-label-workshops">Active</div>
+                        <h2 class="section__title">Ongoing Workshops</h2>
+                    </div>
+                    <div class="events-grid workshop-grid">
+                        <div class="workshop-item workshop-item--live">
+                            <div class="workshop-status">IN PROGRESS</div>
+                            <div class="workshop-icon"><i class="fas fa-chalkboard-user"></i></div>
+                            <h3 class="workshop-name">Frontend Mastery</h3>
+                            <p class="workshop-level">Intermediate</p>
+                            <p class="workshop-duration">6 weeks | 2 sessions/week</p>
+                            <p class="workshop-desc">Master React, Next.js, and modern CSS frameworks.</p>
+                            <a href="#" class="btn btn--primary">Join Now</a>
+                        </div>
+                        <div class="workshop-item workshop-item--live">
+                            <div class="workshop-status">IN PROGRESS</div>
+                            <div class="workshop-icon"><i class="fas fa-server"></i></div>
+                            <h3 class="workshop-name">Backend Development</h3>
+                            <p class="workshop-level">Intermediate</p>
+                            <p class="workshop-duration">8 weeks | 3 sessions/week</p>
+                            <p class="workshop-desc">Build scalable APIs with Node.js and databases.</p>
+                            <a href="#" class="btn btn--primary">Join Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Workshops -->
+                    <div class="category-header workshop-upcoming-header">
+                        <div class="section-label-upcoming">Starting Soon</div>
+                        <h2 class="section__title">Upcoming Workshops</h2>
+                    </div>
+                    <div class="events-grid workshop-upcoming-grid">
+                        <div class="workshop-item workshop-item--upcoming">
+                            <div class="workshop-icon"><i class="fas fa-database"></i></div>
+                            <h3 class="workshop-name">Database Design</h3>
+                            <p class="workshop-level">Beginner-Friendly</p>
+                            <p class="workshop-duration">4 weeks | 2 sessions/week</p>
+                            <p class="workshop-desc">Learn SQL, normalization, and database optimization.</p>
+                            <a href="#" class="btn btn--secondary">Enroll</a>
+                        </div>
+                        <div class="workshop-item workshop-item--upcoming">
+                            <div class="workshop-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 class="workshop-name">Mobile App Development</h3>
+                            <p class="workshop-level">Intermediate</p>
+                            <p class="workshop-duration">6 weeks | 2 sessions/week</p>
+                            <p class="workshop-desc">Build iOS and Android apps with React Native.</p>
+                            <a href="#" class="btn btn--secondary">Get Notified</a>
+                        </div>
+                        <div class="workshop-item workshop-item--upcoming">
+                            <div class="workshop-icon"><i class="fas fa-brain"></i></div>
+                            <h3 class="workshop-name">Deep Learning 101</h3>
+                            <p class="workshop-level">Advanced</p>
+                            <p class="workshop-duration">10 weeks | 3 sessions/week</p>
+                            <p class="workshop-desc">Neural networks, CNNs, and practical ML projects.</p>
+                            <a href="#" class="btn btn--secondary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <!-- Past Workshops -->
+                    <div class="category-header workshop-past-header">
+                        <div class="section-label-past">Completed</div>
+                        <h2 class="section__title">Past Workshops</h2>
+                    </div>
+                    <div class="events-grid workshop-past-grid">
+                        <div class="workshop-item workshop-item--past">
+                            <div class="workshop-icon"><i class="fas fa-check-circle"></i></div>
+                            <h3 class="workshop-name">Git & Version Control</h3>
+                            <p class="workshop-level">Beginner</p>
+                            <p class="workshop-duration">2 weeks | 1 session/week</p>
+                            <p class="workshop-desc">Master Git, GitHub, and collaborative development.</p>
+                            <a href="#" class="btn btn--secondary">View Materials</a>
+                        </div>
+                        <div class="workshop-item workshop-item--past">
+                            <div class="workshop-icon"><i class="fas fa-check-circle"></i></div>
+                            <h3 class="workshop-name">Python Fundamentals</h3>
+                            <p class="workshop-level">Beginner</p>
+                            <p class="workshop-duration">4 weeks | 2 sessions/week</p>
+                            <p class="workshop-desc">Learn Python basics and build your first projects.</p>
+                            <a href="#" class="btn btn--secondary">Access Recording</a>
+                        </div>
+                        <div class="workshop-item workshop-item--past">
+                            <div class="workshop-icon"><i class="fas fa-check-circle"></i></div>
+                            <h3 class="workshop-name">Cloud Deployment</h3>
+                            <p class="workshop-level">Intermediate</p>
+                            <p class="workshop-duration">3 weeks | 1 session/week</p>
+                            <p class="workshop-desc">Deploy apps on AWS, Vercel, and Firebase.</p>
+                            <a href="#" class="btn btn--secondary">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section section--dark events-cta animate-on-scroll">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="cta-title">Ready to Level Up?</h2>
+                    <p class="cta-desc">Be part of a global community of innovators and builders. Choose an event or workshop to join.</p>
+                    <div class="cta-buttons">
+                        <a href="contactus.html" class="btn btn--primary">Get Started</a>
+                        <a href="index.html#about" class="btn btn--secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="aethra-footer">
+    <div class="aethra-footer__wrap">
+        <div class="aethra-footer__grid">
+            <section class="aethra-footer__card">
+                <h4 class="aethra-footer__title">Events</h4>
+                <ul class="aethra-footer__list">
+                    <li><a href="events.html">All Events</a></li>
+                    <li><a href="#">People</a></li>
+                </ul>
+            </section>
+            <section class="aethra-footer__card">
+                <h4 class="aethra-footer__title">Community</h4>
+                <ul class="aethra-footer__list">
+                    <li><a href="#connect">Join Discord</a></li>
+                    <li><a href="#resources">Handbook</a></li>
+                </ul>
+            </section>
+            <section class="aethra-footer__card">
+                <h4 class="aethra-footer__title">Content</h4>
+                <ul class="aethra-footer__list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </section>
+            <section class="aethra-footer__card">
+                <h4 class="aethra-footer__title">Company</h4>
+                <ul class="aethra-footer__list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="aethra-footer__bottom">
+            <p class="aethra-footer__copy">© Aethra 2025 | All Rights Reserved</p>
+            <div class="aethra-footer__socials">
+                <a href="#" aria-label="Instagram" class="aethra-social"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter/X" class="aethra-social"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn" class="aethra-social"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="YouTube" class="aethra-social"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/events.js"></script>
+</body>
+
+</html>
