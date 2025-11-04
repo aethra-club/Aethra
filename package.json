@@ -1,0 +1,27 @@
+{
+  "name": "aethra-website",
+  "version": "1.0.0",
+  "description": "Aethra - Digital Literacy & Tech Community Website",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server -p 3000",
+    "dev": "npx http-server -p 3000 -c-1",
+    "lint:html": "npx htmlhint *.html",
+    "lint:css": "npx stylelint \"Assets/css/**/*.css\"",
+    "lint:js": "npx eslint Assets/js/**/*.js",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "format": "npx prettier --write \"**/*.{html,css,js,json,md}\"",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["aethra", "tech-community", "digital-literacy", "hackathons", "workshops"],
+  "author": "Aethra Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^3.1.0",
+    "eslint": "^8.55.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

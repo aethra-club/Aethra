@@ -1,0 +1,24 @@
+{
+  "name": "Aethra Community",
+  "short_name": "Aethra",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a0f1f",
+  "theme_color": "#7c4dff",
+  "description": "Aethra - Digital Literacy & Tech Community. Empowering through workshops, hackathons, and collaborative learning.",
+  "icons": [
+    {
+      "src": "/Assets/Imgs/aethral-removebg-preview.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Assets/Imgs/aethral-removebg-preview.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity", "social"],
+  "orientation": "any"
+}

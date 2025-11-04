@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Handbook - Aethra</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#7c4dff">
+    <style>
+        :root {
+            --bg-dark-navy: #0a0f1f
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-color: var(--bg-dark-navy);
+            opacity: 0
+        }
+
+        body.page-loaded {
+            opacity: 1
+        }
+
+        .aethra-header {
+            position: sticky;
+            top: 0;
+            z-index: 999
+        }
+    </style>
+    <link rel="stylesheet" href="Assets/css/main.css" media="print" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="Assets/css/main.css">
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@300;400&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./Assets/Imgs/aethral-removebg-preview.png">
+</head>
+
+<body>
+    <header class="aethra-header" role="navigation" aria-label="Main navigation">
+        <div class="aethra-header__wrap"><a href="index.html" class="aethra-header__brand"><img
+                    src="./Assets/Imgs/aethral-removebg-preview.png" alt="Aethra Logo" class="aethra-header__logo"><span
+                    class="aethra-header__name">Aethra</span></a><button class="aethra-header__toggle"
+                aria-controls="aethra-header-nav" aria-expanded="false"><span
+                    class="aethra-header__toggle-bar"></span><span class="aethra-header__toggle-bar"></span><span
+                    class="aethra-header__toggle-bar"></span><span class="sr-only">Menu</span></button></div>
+        <nav class="aethra-header__nav" id="aethra-header-nav">
+            <ul class="aethra-header__list">
+                <li><a href="about.html" class="aethra-header__link">About Us</a></li>
+                <li><a href="events.html" class="aethra-header__link">Events</a></li>
+                <li><a href="contactus.html" class="aethra-header__link">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero section--dark"
+            style="background: linear-gradient(135deg, rgba(93, 169, 233, 0.12) 0%, rgba(124, 77, 255, 0.12) 100%);">
+            <div id="hero-backdrop"></div>
+            <div class="hero__inner">
+                <h3 class="hero__eyebrow">Your Guide to Aethra</h3>
+                <h1 class="hero__heading">Community Handbook</h1>
+                <h5 class="hero__desc"> Everything you need to know about participating in Aethra events, workshops, and
+                    community activities </h5>
+            </div>
+        </section>
+        <section class="section section--light">
+            <div class="container">
+                <div class="handbook-nav" data-animate="fade-up"><a href="#getting-started" class="handbook-nav-item"><i
+                            class="bi bi-play-circle"></i> Getting Started </a><a href="#code-of-conduct"
+                        class="handbook-nav-item"><i class="bi bi-shield-check"></i> Code of Conduct </a><a
+                        href="#hackathon-guide" class="handbook-nav-item"><i class="bi bi-trophy"></i> Hackathon Guide
+                    </a><a href="#resources" class="handbook-nav-item"><i class="bi bi-book"></i> Resources </a><a
+                        href="#faq" class="handbook-nav-item"><i class="bi bi-question-circle"></i> FAQ </a></div>
+            </div>
+        </section>
+        <section id="getting-started" class="section section--dark">
+            <div class="container">
+                <h2 class="section__title" data-animate="fade-up">Getting Started with Aethra</h2>
+                <div class="handbook-content" data-animate="fade-up" data-animate-delay="0.2">
+                    <div class="handbook-card">
+                        <div class="handbook-icon"><i class="bi bi-person-plus"></i></div>
+                        <h3>1. Join the Community</h3>
+                        <p>Follow us on <a href="https://instagram.com/aethra.club5" target="_blank">Instagram</a> and
+                            <a href="https://www.linkedin.com/company/linkedinaethra" target="_blank">LinkedIn</a> to
+                            stay updated with the latest events and announcements.</p>
+                    </div>
+                    <div class="handbook-card">
+                        <div class="handbook-icon"><i class="bi bi-calendar-check"></i></div>
+                        <h3>2. Register for Events</h3>
+                        <p>Browse our <a href="events.html">events page</a> and register for workshops, hackathons, and
+                            community meetups that interest you.</p>
+                    </div>
+                    <div class="handbook-card">
+                        <div class="handbook-icon"><i class="bi bi-people"></i></div>
+                        <h3>3. Network & Collaborate</h3>
+                        <p>Connect with fellow students, mentors, and industry professionals. Build your network and
+                            find teammates for hackathons.</p>
+                    </div>
+                    <div class="handbook-card">
+                        <div class="handbook-icon"><i class="bi bi-lightbulb"></i></div>
+                        <h3>4. Build & Learn</h3>
+                        <p>Participate in workshops to learn new skills, join hackathons to build projects, and share
+                            your knowledge with others.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="code-of-conduct" class="section section--light">
+            <div class="container">
+                <h2 class="section__title" data-animate="fade-up">Code of Conduct</h2>
+                <div class="conduct-content" data-animate="fade-up" data-animate-delay="0.1">
+                    <div class="conduct-principle">
+                        <div class="conduct-number">01</div>
+                        <div>
+                            <h3>Be Respectful</h3>
+                            <p>Treat everyone with respect and kindness. We welcome people of all backgrounds, skill
+                                levels, and experiences.</p>
+                        </div>
+                    </div>
+                    <div class="conduct-principle">
+                        <div class="conduct-number">02</div>
+                        <div>
+                            <h3>Be Inclusive</h3>
+                            <p>Foster an environment where everyone feels welcome to participate, learn, and contribute.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conduct-principle">
+                        <div class="conduct-number">03</div>
+                        <div>
+                            <h3>Be Collaborative</h3>
+                            <p>Share knowledge, help others, and work together. Learning is better when we support each
+                                other.</p>
+                        </div>
+                    </div>
+                    <div class="conduct-principle">
+                        <div class="conduct-number">04</div>
+                        <div>
+                            <h3>Be Honest</h3>
+                            <p>Maintain academic integrity. Submit original work and give credit where credit is due.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conduct-principle">
+                        <div class="conduct-number">05</div>
+                        <div>
+                            <h3>Be Constructive</h3>
+                            <p>Provide helpful feedback and accept feedback graciously. Focus on growth and improvement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hackathon-guide" class="section section--dark">
+            <div class="container">
+                <h2 class="section__title" data-animate="fade-up">Hackathon Survival Guide</h2>
+                <div class="guide-grid" data-animate="fade-up" data-animate-delay="0.2">
+                    <div class="guide-card">
+                        <h3><i class="bi bi-clock"></i> Before the Event</h3>
+                        <ul>
+                            <li>✓ Register early and read the event rules</li>
+                            <li>✓ Form a team or be open to joining one</li>
+                            <li>✓ Brainstorm project ideas</li>
+                            <li>✓ Set up your development environment</li>
+                            <li>✓ Get familiar with APIs and tools you'll use</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3><i class="bi bi-laptop"></i> During the Event</h3>
+                        <ul>
+                            <li>✓ Attend the opening ceremony</li>
+                            <li>✓ Start with a clear plan and MVP</li>
+                            <li>✓ Take breaks and stay hydrated</li>
+                            <li>✓ Ask mentors for help when stuck</li>
+                            <li>✓ Document your progress</li>
+                            <li>✓ Prepare a clear demo and presentation</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3><i class="bi bi-trophy"></i> Judging Criteria</h3>
+                        <ul>
+                            <li>★ Innovation & Creativity</li>
+                            <li>★ Technical Implementation</li>
+                            <li>★ Design & User Experience</li>
+                            <li>★ Impact & Practicality</li>
+                            <li>★ Presentation Quality</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3><i class="bi bi-award"></i> After the Event</h3>
+                        <ul>
+                            <li>✓ Submit your project on time</li>
+                            <li>✓ Share your experience on social media</li>
+                            <li>✓ Connect with teammates and new friends</li>
+                            <li>✓ Continue developing your project</li>
+                            <li>✓ Add it to your portfolio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="resources" class="section section--light">
+            <div class="container">
+                <h2 class="section__title" data-animate="fade-up">Essential Resources</h2>
+                <div class="resources-grid" data-animate="fade-up" data-animate-delay="0.2">
+                    <div class="resource-category">
+                        <h3><i class="bi bi-code-slash"></i> Development Tools</h3>
+                        <ul>
+                            <li><a href="https://github.com" target="_blank">GitHub</a> - Version control</li>
+                            <li><a href="https://vercel.com" target="_blank">Vercel</a> - Deployment</li>
+                            <li><a href="https://figma.com" target="_blank">Figma</a> - Design</li>
+                            <li><a href="https://code.visualstudio.com" target="_blank">VS Code</a> - Code editor</li>
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3><i class="bi bi-book"></i> Learning Platforms</h3>
+                        <ul>
+                            <li><a href="https://freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
+                            <li><a href="https://youtube.com" target="_blank">YouTube Tutorials</a></li>
+                            <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                            <li><a href="blog.html">Aethra Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3><i class="bi bi-lightning"></i> APIs & Services</h3>
+                        <ul>
+                            <li><a href="https://openai.com" target="_blank">OpenAI API</a></li>
+                            <li><a href="https://firebase.google.com" target="_blank">Firebase</a></li>
+                            <li><a href="https://stripe.com" target="_blank">Stripe</a></li>
+                            <li><a href="https://rapidapi.com" target="_blank">RapidAPI</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3><i class="bi bi-chat-dots"></i> Community</h3>
+                        <ul>
+                            <li><a href="https://instagram.com/aethra.club5" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/linkedinaethra" target="_blank">LinkedIn</a>
+                            </li>
+                            <li><a href="mailto:aethra.club@gmail.com">Email Us</a></li>
+                            <li><a href="contactus.html">Contact Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="section section--dark">
+            <div class="container">
+                <h2 class="section__title" data-animate="fade-up">Frequently Asked Questions</h2>
+                <div class="faq-list" data-animate="fade-up" data-animate-delay="0.2">
+                    <div class="faq-item">
+                        <h3>Do I need to be a student to participate?</h3>
+                        <p>Yes, Aethra events are primarily for students. However, recent graduates and young
+                            professionals are also welcome at most events.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do I need prior coding experience?</h3>
+                        <p>Not at all! We welcome beginners and offer workshops specifically designed for those new to
+                            programming. Our hackathons have tracks for all skill levels.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How do I find a team for hackathons?</h3>
+                        <p>You can form a team with friends or use our team formation sessions during events. Many
+                            participants also find teammates through our community channels.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are events free to attend?</h3>
+                        <p>Yes! All Aethra events are completely free for participants. We believe in making tech
+                            education accessible to everyone.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I participate remotely?</h3>
+                        <p>Most of our hackathons support both in-person and virtual participation. Check the specific
+                            event details for participation options.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I become a mentor or sponsor?</h3>
+                        <p>We'd love to have you! Please reach out through our <a href="contactus.html">contact page</a>
+                            or email us at <a href="mailto:aethra.club@gmail.com">aethra.club@gmail.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light">
+            <div class="container">
+                <div class="cta-box"
+                    style="text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, rgba(124, 77, 255, 0.1), rgba(93, 169, 233, 0.1)); border-radius: 20px;">
+                    <h2 class="section__title" data-animate="fade-up">Ready to Get Started?</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-muted-dark); margin: 1.5rem 0 2rem;"
+                        data-animate="fade-up" data-animate-delay="0.1"> Join our next event and become part of the
+                        Aethra community </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;"
+                        data-animate="fade-up" data-animate-delay="0.2"><a href="events.html"
+                            class="btn btn--primary">Browse Events</a><a href="contactus.html"
+                            class="btn btn--secondary">Contact Us</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-premium">
+        <div class="footer-cta">
+            <div class="cta-container"><span class="cta-badge"><i class="bi bi-lightning-charge-fill"></i> Join Our
+                    Community </span>
+                <h2 class="cta-title"> Stay Ahead with <span class="gradient-text">Aethra</span></h2>
+                <p class="cta-subtitle"> Get exclusive access to hackathons, workshops, and opportunities. Join 323+
+                    student innovators shaping the future. </p>
+                <form class="newsletter-form-enhanced"
+                    onsubmit="event.preventDefault(); alert('Newsletter subscription coming soon!');"><input
+                        type="email" class="newsletter-input-enhanced" placeholder="Enter your email address"
+                        required><button type="submit" class="newsletter-btn-enhanced">Get Started</button></form>
+                <div class="cta-features">
+                    <div class="cta-feature"><i class="bi bi-check-circle-fill"></i><span>Weekly Updates</span></div>
+                    <div class="cta-feature"><i class="bi bi-check-circle-fill"></i><span>Exclusive Events</span></div>
+                    <div class="cta-feature"><i class="bi bi-check-circle-fill"></i><span>Free Resources</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main-premium">
+            <div class="footer-top">
+                <div class="footer-brand-premium">
+                    <div class="brand-logo-wrapper"><img src="./Assets/Imgs/aethral-removebg-preview.png"
+                            alt="Aethra Logo" class="brand-logo"><span class="brand-name">Aethra</span></div>
+                    <p class="brand-tagline"> Empowering the next generation of innovators through technology,
+                        community, and hands-on learning experiences that bridge the digital divide. </p>
+                    <div class="brand-stats">
+                        <div class="brand-stat"><span class="brand-stat-number">323+</span><span
+                                class="brand-stat-label">Students</span></div>
+                        <div class="brand-stat"><span class="brand-stat-number">$1860+</span><span
+                                class="brand-stat-label">Prizes</span></div>
+                        <div class="brand-stat"><span class="brand-stat-number">15+</span><span
+                                class="brand-stat-label">Countries</span></div>
+                    </div>
+                </div>
+                <nav class="footer-nav-premium">
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Company</h3>
+                        <div class="footer-nav-links"><a href="about.html" class="footer-nav-link">About Us</a><a
+                                href="team.html" class="footer-nav-link">Our Team</a><a href="story.html"
+                                class="footer-nav-link">Our Story</a><a href="comingsoon.html"
+                                class="footer-nav-link">Careers</a></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Community</h3>
+                        <div class="footer-nav-links"><a href="events.html" class="footer-nav-link">Events</a><a
+                                href="blog.html" class="footer-nav-link">Blog</a><a href="newsletter.html"
+                                class="footer-nav-link">Newsletter</a><a href="handbook.html"
+                                class="footer-nav-link">Handbook</a></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Resources</h3>
+                        <div class="footer-nav-links"><a href="resources.html" class="footer-nav-link">Learning
+                                Hub</a><a href="comingsoon.html" class="footer-nav-link">Documentation</a><a
+                                href="comingsoon.html" class="footer-nav-link">API</a><a href="comingsoon.html"
+                                class="footer-nav-link">Support</a></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Legal</h3>
+                        <div class="footer-nav-links"><a href="contactus.html" class="footer-nav-link">Contact</a><a
+                                href="comingsoon.html" class="footer-nav-link">Privacy</a><a href="comingsoon.html"
+                                class="footer-nav-link">Terms</a><a href="comingsoon.html"
+                                class="footer-nav-link">Cookies</a></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom-premium">
+                <div class="footer-bottom-left">
+                    <p class="footer-copyright">© 2025 Aethra. All rights reserved.</p>
+                    <div class="footer-made-with"><span>Made with</span><span class="heart-icon">❤</span><span>by the
+                            Aethra Team</span></div>
+                </div>
+                <div class="footer-social-premium"><a href="https://www.linkedin.com/company/linkedinaethra"
+                        class="social-link-premium" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin"></i></a><a href="https://instagram.com/aethra.club5"
+                        class="social-link-premium" aria-label="Instagram" target="_blank" rel="noopener"><i
+                            class="fab fa-instagram"></i></a><a href="https://twitter.com/aethra"
+                        class="social-link-premium" aria-label="Twitter" target="_blank" rel="noopener"><i
+                            class="fab fa-twitter"></i></a><a href="mailto:aethra.club@gmail.com"
+                        class="social-link-premium" aria-label="Email"><i class="fas fa-envelope"></i></a><a
+                        href="https://github.com/aethra" class="social-link-premium" aria-label="GitHub" target="_blank"
+                        rel="noopener"><i class="fab fa-github"></i></a></div>
+                <div class="footer-legal"><a href="comingsoon.html" class="footer-legal-link">Privacy Policy</a><span
+                        class="footer-separator"></span><a href="comingsoon.html" class="footer-legal-link">Terms of
+                        Service</a><span class="footer-separator"></span><a href="comingsoon.html"
+                        class="footer-legal-link">Accessibility</a></div>
+            </div>
+        </div>
+    </footer><a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <script src="./Assets/js/main.js"></script>
+</body>
+
+</html>

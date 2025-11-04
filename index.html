@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aethra is a global, student-led initiative dedicated to making technology education accessible through workshops, hackathons, and community building.">
+    <meta name="keywords"
+        content="Aethra, tech community, digital literacy, hackathons, workshops, student-led, technology education">
+    <meta name="author" content="Aethra Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aethra.community/">
+    <meta property="og:title" content="Aethra - Digital Literacy & Tech Community">
+    <meta property="og:description"
+        content="Empowering Young Minds, Bridging the Digital Divide through hands-on workshops and hackathons.">
+    <meta property="og:image" content="https://aethra.community/Assets/Imgs/aethral-removebg-preview.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aethra.community/">
+    <meta property="twitter:title" content="Aethra - Digital Literacy & Tech Community">
+    <meta property="twitter:description"
+        content="Empowering Young Minds, Bridging the Digital Divide through hands-on workshops and hackathons.">
+    <meta property="twitter:image" content="https://aethra.community/Assets/Imgs/aethral-removebg-preview.png">
+    <link rel="canonical" href="https://aethra.community/">
+    <title>Aethra - Digital Literacy & Tech Community</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#7c4dff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://placehold.co">
+    <style>
+        :root {
+            --bg-dark-navy: #0a0f1f;
+            --accent-blue: #5da9e9;
+            --accent-violet: #7c4dff;
+            --text-white: #fff;
+            --text-light-gray: #e0e0e0;
+            --font-heading: "Poppins", sans-serif;
+            --font-body: "Inter", sans-serif
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-color: var(--bg-dark-navy);
+            color: var(--text-light-gray);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            opacity: 0;
+            transition: opacity .5s ease-in-out
+        }
+
+        body.page-loaded {
+            opacity: 1
+        }
+
+        .aethra-header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            transition: background-color .3s ease
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden
+        }
+
+        .hero__heading {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            color: var(--text-white);
+            text-align: center
+        }
+    </style>
+    <link rel="stylesheet" href="Assets/css/main.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="Assets/css/homepage-enhanced.css"><noscript>
+        <link rel="stylesheet" href="Assets/css/main.css">
+    </noscript>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@300;400&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./Assets/Imgs/aethral-removebg-preview.png">
+</head>
+
+<body>
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div><a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="aethra-header" role="banner" aria-label="Main navigation">
+        <div class="aethra-header__wrap"><a href="index.html" class="aethra-header__brand"><img
+                    src="./Assets/Imgs/aethral-removebg-preview.png" alt="Aethra Logo" class="aethra-header__logo"><span
+                    class="aethra-header__name">Aethra</span></a><button class="aethra-header__toggle"
+                aria-controls="aethra-header-nav" aria-expanded="false"><span
+                    class="aethra-header__toggle-bar"></span><span class="aethra-header__toggle-bar"></span><span
+                    class="aethra-header__toggle-bar"></span><span class="sr-only">Menu</span></button>
+            <nav class="aethra-header__nav" id="aethra-header-nav">
+                <ul class="aethra-header__list">
+                    <li><a href="about.html" class="aethra-header__link">About Us</a></li>
+                    <li><a href="events.html" class="aethra-header__link">Events</a></li>
+                    <li><a href="contactus.html" class="aethra-header__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="hero section--dark" id="hero" aria-labelledby="hero-heading">
+            <div id="particles-js"></div>
+            <div id="hero-backdrop"></div>
+            <div class="hero__inner" data-parallax="0.3">
+                <h3 class="hero__eyebrow">Join The Future with</h3>
+                <h1 class="hero__heading" id="hero-heading"> AETHRA </h1>
+                <h5 class="hero__desc"> Empowering Student Innovators Worldwide in AI and Tech!<br /> Hosting internal
+                    Hackathons for schools across the Globe<br /><strong style="color: var(--accent-blue);">Organized by
+                        School students, for School students</strong><br /> Promoting Learning beyond the classroom!
+                </h5>
+                <div class="hero__ctas"><a href="#events" class="btn btn--primary">Explore Events</a><a href="#about"
+                        class="btn btn--secondary">Learn More</a></div>
+                <div class="scroll-indicator"><span></span><span></span><span></span></div>
+            </div>
+        </section>
+        <section class="section section--light about-split animate-on-scroll reveal-on-scroll" id="about">
+            <div class="container container--wide">
+                <div class="about-split__grid">
+                    <div class="about-split__content" data-parallax="0.2">
+                        <h2 class="section__title">Our Mission</h2>
+                        <p> Students rarely get to face open-ended challenges, make decisions, fail, and rebuild in
+                            school settings. </p>
+                        <p> Hackathons help bring that missing layer into schools. They turn theory into action, give
+                            students ownership of their ideas, and replace rote learning with experience. </p>
+                        <p> Our mission is simple: to bring this kind of learning into schools around the world. Every
+                            school, every student, not just those with resources or elite programs, should be able to
+                            host hackathons. </p>
+                    </div>
+                    <div class="about-split__media"><img
+                            src="https://placehold.co/600x400/212529/FFFFFF?text=Collaboration"
+                            alt="Students collaborating in a workshop, learning technology skills together"
+                            loading="lazy" width="600" height="400" /></div>
+                </div>
+                <div class="container">
+                    <div class="counters-grid">
+                        <div class="counter-card"><i class="bi bi-people-fill"
+                                style="font-size: 2.5rem; color: var(--accent-violet); margin-bottom: 12px;"></i>
+                            <h3 class="counter-card__number" data-target="323">0</h3>
+                            <p class="counter-card__title">Participants</p>
+                        </div>
+                        <div class="counter-card"><i class="bi bi-trophy-fill"
+                                style="font-size: 2.5rem; color: var(--accent-violet); margin-bottom: 12px;"></i>
+                            <h3 class="counter-card__number" data-target="1860">0</h3>
+                            <p class="counter-card__title">$ in Prizes</p>
+                        </div>
+                        <div class="counter-card"><i class="bi bi-award-fill"
+                                style="font-size: 2.5rem; color: var(--accent-violet); margin-bottom: 12px;"></i>
+                            <h3 class="counter-card__number" data-target="40">0</h3>
+                            <p class="counter-card__title">.xyz Domains</p>
+                        </div>
+                        <div class="counter-card"><i class="bi bi-star-fill"
+                                style="font-size: 2.5rem; color: var(--accent-violet); margin-bottom: 12px;"></i>
+                            <h3 class="counter-card__number" data-target="10">0</h3>
+                            <p class="counter-card__title">Award Categories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark quotes animate-on-scroll" id="quotes">
+            <div class="container">
+                <figure class="quote quote--animated">
+                    <blockquote> "In school, you're told to get the right answer. In a hackathon, you have to find the
+                        right question. That difference is what inspired AETHRA." </blockquote>
+                    <figcaption>— Aaryan Mulaye, President of AETHRA</figcaption>
+                </figure>
+                <figure class="quote quote--animated">
+                    <blockquote> "We started AETHRA with a vision to change the way students experience hackathons while
+                        they create tools that can be socially impactful and useful." </blockquote>
+                    <figcaption>— Arnav Dhiman, Vice President of AETHRA</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="section section--light animate-on-scroll" id="why-we-exist">
+            <div class="container container--wide">
+                <div class="about-split__grid">
+                    <div class="about-split__media"><img
+                            src="https://placehold.co/600x400/212529/FFFFFF?text=Mentorship"
+                            alt="A mentor guiding students through their tech learning journey" loading="lazy"
+                            width="600" height="400" /></div>
+                    <div class="about-split__content">
+                        <h2 class="section__title">About Us</h2>
+                        <p> Aethra is a student-run initiative that aims to bring Hackathons to secondary schools around
+                            the world. We partner with schools to host internal hackathons that are designed exclusively
+                            for students and managed completely by our team. </p>
+                        <p> We understand that schools are always looking for new ways to engage students beyond the
+                            classroom. Organizing large-scale extracurricular events can be difficult to balance with
+                            academic priorities. Aethra makes it simple by handling every part of the hackathon process,
+                            including setup, registration, judging, and certificates. </p><a href="about.html"
+                            class="read-more-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark events animate-on-scroll" id="events">
+            <div class="container">
+                <header class="events__head">
+                    <h2 class="section__title">Ongoing Events</h2>
+                    <p style="text-align: center; max-width: 60ch; margin: 0 auto 48px; color: var(--text-light-gray);">
+                        Join our flagship event and be part of a global community of 323+ student innovators </p>
+                </header>
+                <div class="events__grid">
+                    <article class="event-card event-card--featured">
+                        <div class="event-card__badge">🔥 14 Days Left</div>
+                        <div class="event-card__meta">
+                            <h3 class="event-card__title">AETHRA GLOBAL IDEATHON 2025</h3>
+                            <div class="event-card__location">Global • Online</div>
+                        </div>
+                        <p class="event-card__desc"><strong>All you need is an Idea - and a drive to create
+                                impact!</strong><br /> Design app-based ideas that make knowledge and skills more
+                            accessible to everyone. Reimagine how technology can drive change in sustainability,
+                            healthcare, civic tech, or AI innovation. </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item"><i class="bi bi-people"></i><span>323 Participants</span></div>
+                            <div class="highlight-item"><i class="bi bi-gift"></i><span>$1,860+ in Prizes</span></div>
+                            <div class="highlight-item"><i class="bi bi-calendar"></i><span>Deadline: Nov 16</span>
+                            </div>
+                        </div>
+                        <div class="event-card__tags"><span class="chip">Beginner Friendly</span><span
+                                class="chip">Low/No Code</span><span class="chip">Social Good</span><span
+                                class="chip">Ages 13+</span></div>
+                        <div style="display: flex; gap: 12px; margin-top: auto;"><a
+                                href="https://aethra-ideathon-2025.devpost.com/"
+                                class="btn btn--primary event-card__cta" target="_blank" rel="noopener"
+                                style="flex: 1;">Register Now</a><a href="events.html" class="btn btn--secondary"
+                                style="flex: 0.5;">Details</a></div>
+                    </article>
+                </div>
+                <div class="events__cta"><a href="events.html" class="btn btn--secondary">View All Events</a></div>
+            </div>
+        </section>
+        <section class="section section--light animate-on-scroll" id="why-hackathons">
+            <div class="container">
+                <h2 class="section__title">Why Hackathons Matter</h2>
+                <p style="text-align: center; max-width: 70ch; margin: 0 auto 48px; font-size: 1.1rem;"> Hackathons
+                    aren't just coding competitions. They're transformative experiences that prepare students for the
+                    real world. </p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                        <h3>Creative Problem Solving</h3>
+                        <p>Learn to tackle open-ended challenges with innovative solutions, just like in the real world.
+                        </p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="bi bi-people-fill"></i></div>
+                        <h3>Teamwork & Collaboration</h3>
+                        <p>Work with diverse teams, communicate ideas, and build something meaningful together.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="bi bi-gear-fill"></i></div>
+                        <h3>Hands-On Learning</h3>
+                        <p>Move beyond theory and textbooks. Build real projects and learn by doing.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h3>Fail Fast, Learn Faster</h3>
+                        <p>Experience failure in a safe environment and develop resilience and adaptability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark connect animate-on-scroll" id="connect">
+            <div class="container">
+                <header class="connect__head">
+                    <h2 class="section__title">Contact</h2>
+                    <p class="connect__lead">Stay in the loop with our latest events and community news. Connect with
+                        Aethra and join our growing network of student innovators.</p>
+                </header>
+                <div class="connect__grid">
+                    <article class="connect-card">
+                        <h3 class="connect-card__title">Email Us</h3>
+                        <p class="connect-card__desc">Have questions or want to partner with us? Reach out to our team
+                            directly.</p><a href="mailto:aethra.club@gmail.com" class="btn btn--primary">Send Email</a>
+                    </article>
+                    <article class="connect-card">
+                        <h3 class="connect-card__title">Schedule a Meeting</h3>
+                        <p class="connect-card__desc">Book a time to discuss hosting a hackathon at your school or
+                            collaborating with Aethra.</p><a href="https://cal.com/aethra" class="btn btn--secondary"
+                            target="_blank" rel="noopener">Book Meeting</a>
+                    </article>
+                </div>
+                <!-- <div class="connect__social"><span class="slabel">Find us on</span>
+                    <ul class="slinks">
+                        <li><a href="https://linkedin.com/company/linkedinaethra" target="_blank"
+                                rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://instagram.com/aethra.club5" target="_blank" rel="noopener">Instagram</a>
+                        </li>
+                        <li><a href="mailto:aethra.club@gmail.com">Email</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </section>
+        <section class="section section--dark vision animate-on-scroll" id="vision">
+            <div class="container">
+                <h2 class="section__title">Our Future Vision</h2>
+                <div class="vision-content">
+                    <div class="vision-item">
+                        <div class="vision-number">01</div>
+                        <h3>Global Innovation Hubs</h3>
+                        <p class="vision__desc"> Over the next few years, Aethra will establish a global network of
+                            student-run innovation hubs within schools, where hackathons aren't one-time events but an
+                            integral part of how students learn. </p>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-number">02</div>
+                        <h3>Hackathons as Student Life</h3>
+                        <p class="vision__desc"> Our vision is to make hackathons a staple of student life, just like
+                            sports teams or MUN clubs, but focused on solving real problems with technology. </p>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-number">03</div>
+                        <h3>Building Tomorrow's Solutions</h3>
+                        <p class="vision__desc"> Imagine schools where students compete to design tools that make
+                            classrooms more inclusive, cities more sustainable, or healthcare more accessible. That's
+                            the future we're building. </p>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-number">04</div>
+                        <h3>Scale & Mentorship</h3>
+                        <p class="vision__desc"> Aethra's next chapter is about scale, experimenting with frameworks and
+                            formats, and mentorship programs that connect thousands of young builders worldwide. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--light instagram-feed-section">
+            <div class="container">
+                <h2 class="section__title" data-animate="fade-up">Follow Our Journey on Instagram</h2>
+                <p class="section__subtitle" data-animate="fade-up" data-animate-delay="0.1"> Stay updated with our
+                    latest events, workshops, and community highlights @aethra.club5 </p>
+                <div style="text-align: center; margin: 3rem 0;">
+                    <div
+                        style="background: linear-gradient(135deg, rgba(124, 77, 255, 0.1), rgba(93, 169, 233, 0.1)); padding: 3rem; border-radius: 20px; border: 2px solid rgba(124, 77, 255, 0.3);">
+                        <i class="fab fa-instagram"
+                            style="font-size: 4rem; color: var(--accent-violet); margin-bottom: 1.5rem;"></i>
+                        <h3 style="color: var(--text-color); margin-bottom: 1rem; font-size: 1.8rem;">Check Out Our
+                            Latest Posts!</h3>
+                        <p
+                            style="color: var(--text-muted-dark); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem;">
+                            Follow <strong style="color: var(--accent-violet);">@aethra.club5</strong> on Instagram to
+                            see our real-time updates, behind-the-scenes content, event highlights, and community
+                            celebrations! </p><a href="https://www.instagram.com/aethra.club5/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn--primary"
+                            style="display: inline-flex; align-items: center; gap: 0.75rem; font-size: 1.1rem; padding: 1.2rem 2.5rem;"><i
+                                class="fab fa-instagram"></i> Follow @aethra.club5 </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-premium">
+        <div class="footer-cta">
+            <div class="cta-container"><span class="cta-badge"><i class="bi bi-lightning-charge-fill"></i> Join Our
+                    Community </span>
+                <h2 class="cta-title"> Stay Ahead with <span class="gradient-text">Aethra</span></h2>
+                <p class="cta-subtitle"> Get exclusive access to hackathons, workshops, and opportunities. Join 323+
+                    student innovators shaping the future. </p>
+                <form class="newsletter-form-enhanced"
+                    onsubmit="event.preventDefault(); alert('Newsletter subscription coming soon!');"><input
+                        type="email" class="newsletter-input-enhanced" placeholder="Enter your email address"
+                        required><button type="submit" class="newsletter-btn-enhanced">Get Started</button></form>
+                <div class="cta-features">
+                    <div class="cta-feature"><i class="bi bi-check-circle-fill"></i><span>Weekly Updates</span></div>
+                    <div class="cta-feature"><i class="bi bi-check-circle-fill"></i><span>Exclusive Events</span></div>
+                    <div class="cta-feature"><i class="bi bi-check-circle-fill"></i><span>Free Resources</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main-premium">
+            <div class="footer-top">
+                <div class="footer-brand-premium">
+                    <div class="brand-logo-wrapper"><img src="./Assets/Imgs/aethral-removebg-preview.png"
+                            alt="Aethra Logo" class="brand-logo"><span class="brand-name">Aethra</span></div>
+                    <p class="brand-tagline"> Empowering the next generation of innovators through technology,
+                        community, and hands-on learning experiences that bridge the digital divide. </p>
+                    <div class="brand-stats">
+                        <div class="brand-stat"><span class="brand-stat-number">323+</span><span
+                                class="brand-stat-label">Students</span></div>
+                        <div class="brand-stat"><span class="brand-stat-number">$1860+</span><span
+                                class="brand-stat-label">Prizes</span></div>
+                        <div class="brand-stat"><span class="brand-stat-number">15+</span><span
+                                class="brand-stat-label">Countries</span></div>
+                    </div>
+                </div>
+                <nav class="footer-nav-premium">
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Company</h3>
+                        <div class="footer-nav-links"><a href="about.html" class="footer-nav-link">About Us</a><a
+                                href="team.html" class="footer-nav-link">Our Team</a><a href="story.html"
+                                class="footer-nav-link">Our Story</a><a href="comingsoon.html"
+                                class="footer-nav-link">Careers</a></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Community</h3>
+                        <div class="footer-nav-links"><a href="events.html" class="footer-nav-link">Events</a><a
+                                href="blog.html" class="footer-nav-link">Blog</a><a href="newsletter.html"
+                                class="footer-nav-link">Newsletter</a><a href="handbook.html"
+                                class="footer-nav-link">Handbook</a></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Resources</h3>
+                        <div class="footer-nav-links"><a href="resources.html" class="footer-nav-link">Learning
+                                Hub</a><a href="comingsoon.html" class="footer-nav-link">Documentation</a><a
+                                href="comingsoon.html" class="footer-nav-link">API</a><a href="comingsoon.html"
+                                class="footer-nav-link">Support</a></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Legal</h3>
+                        <div class="footer-nav-links"><a href="contactus.html" class="footer-nav-link">Contact</a><a
+                                href="comingsoon.html" class="footer-nav-link">Privacy</a><a href="comingsoon.html"
+                                class="footer-nav-link">Terms</a><a href="comingsoon.html"
+                                class="footer-nav-link">Cookies</a></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom-premium">
+                <div class="footer-bottom-left">
+                    <p class="footer-copyright">© 2025 Aethra. All rights reserved.</p>
+                    <div class="footer-made-with"><span>Made with</span><span class="heart-icon">❤</span><span>by the
+                            Aethra Team</span></div>
+                </div>
+                <div class="footer-social-premium"><a href="https://www.linkedin.com/company/linkedinaethra"
+                        class="social-link-premium" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin"></i></a><a href="https://instagram.com/aethra.club5"
+                        class="social-link-premium" aria-label="Instagram" target="_blank" rel="noopener"><i
+                            class="fab fa-instagram"></i></a><a href="https://twitter.com/aethra"
+                        class="social-link-premium" aria-label="Twitter" target="_blank" rel="noopener"><i
+                            class="fab fa-twitter"></i></a><a href="mailto:aethra.club@gmail.com"
+                        class="social-link-premium" aria-label="Email"><i class="fas fa-envelope"></i></a><a
+                        href="https://github.com/aethra" class="social-link-premium" aria-label="GitHub" target="_blank"
+                        rel="noopener"><i class="fab fa-github"></i></a></div>
+                <div class="footer-legal"><a href="comingsoon.html" class="footer-legal-link">Privacy Policy</a><span
+                        class="footer-separator"></span><a href="comingsoon.html" class="footer-legal-link">Terms of
+                        Service</a><span class="footer-separator"></span><a href="comingsoon.html"
+                        class="footer-legal-link">Accessibility</a></div>
+            </div>
+        </div>
+    </footer><a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="Assets/js/homepage-enhanced.js"></script>
+    <script src="Assets/js/main.js"></script>
+</body>
+
+</html>
