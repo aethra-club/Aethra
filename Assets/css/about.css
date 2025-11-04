@@ -1,0 +1,488 @@
+
+.aethra-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.aethra-service-card {
+    background-color: #0F142B; 
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aethra-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.aethra-service-card.card-border-blue { border-color: var(--accent-blue); }
+.aethra-service-card.card-border-violet { border-color: var(--accent-violet); }
+.aethra-service-card.card-border-green { border-color: var(--accent-green); }
+.aethra-service-card.card-border-yellow { border-color: var(--accent-yellow); }
+.aethra-service-card__icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.card-border-blue .aethra-service-card__icon { color: var(--accent-blue); }
+.card-border-violet .aethra-service-card__icon { color: var(--accent-violet); }
+.card-border-green .aethra-service-card__icon { color: var(--accent-green); }
+.card-border-yellow .aethra-service-card__icon { color: var(--accent-yellow); }
+.aethra-service-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+.aethra-service-card__text {
+    color: var(--text-light-gray);
+    line-height: 1.6;
+    flex-grow: 1; 
+    margin-bottom: 1.5rem;
+}
+.aethra-service-card__link {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-light-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start; 
+}
+.card-border-blue .aethra-service-card__link:hover { color: var(--accent-blue); }
+.card-border-violet .aethra-service-card__link:hover { color: var(--accent-violet); }
+.card-border-green .aethra-service-card__link:hover { color: var(--accent-green); }
+.card-border-yellow .aethra-service-card__link:hover { color: var(--accent-yellow); }
+@media (max-width: 575.98px) {
+  .aethra-service-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .aethra-service-card {
+    padding: 2rem 1.5rem; 
+  }
+  .aethra-service-card__title {
+    font-size: 1.3rem; 
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .aethra-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+.section--light.our-people-light {
+    background-color: var(--bg-light); 
+    padding-block: 80px;
+}
+.section--light.our-people-light .section-title {
+    color: var(--text-dark-gray); 
+    text-align: center;
+}
+.aethra-team-subsection-light {
+    margin-top: 4rem;
+}
+.aethra-team-subtitle-light {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--accent-violet);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.aethra-people-grid-light {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px; 
+    margin-inline: auto; 
+}
+.aethra-person-card-light {
+    background-color: #ffffff; 
+    border: 2px solid var(--bg-dark-navy); 
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.aethra-person-card-light:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.aethra-person-card-light__initials {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 50%;
+    background-color: var(--accent-violet);
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aethra-person-card-light__name {
+    font-size: 1.4rem;
+    color: var(--text-dark-gray);
+    margin-bottom: 0.25rem;
+}
+.aethra-person-card-light__role {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.aethra-person-card-light__bio {
+    font-size: 0.9rem;
+    color: var(--text-muted-dark);
+    line-height: 1.6;
+}
+.aethra-team-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+.section--light .btn--secondary {
+    border-color: var(--accent-violet);
+    color: var(--accent-violet);
+}
+.section--light .btn--secondary:hover {
+    background-color: var(--accent-violet);
+    color: var(--text-white);
+    box-shadow: 0 0 20px 0 rgba(124, 77, 255, 0.5);
+}
+@media (max-width: 767.98px) {
+    .aethra-people-grid-light {
+        max-width: 100%;
+    }
+}
+@media (max-width: 575.98px) {
+    .aethra-people-grid-light {
+        grid-template-columns: 1fr;
+    }
+    .aethra-team-subtitle-light {
+        font-size: 1.5rem;
+    }
+}
+.aethra-person-card-light.judge-tba {
+    position: relative; 
+    overflow: hidden; 
+    user-select: none; 
+}
+.aethra-person-card-light.judge-tba > * {
+    filter: blur(5px);
+    pointer-events: none; 
+}
+.aethra-person-card-light.judge-tba::after {
+    content: 'TBA';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 15vw, 4.5rem); 
+    font-weight: 700;
+    color: var(--accent-violet);
+    opacity: 0.6; 
+    z-index: 10; 
+}
+.our-partners-cards {
+    background-color: var(--bg-dark-navy);
+    padding-block: 80px;
+}
+.our-partners-cards .section-subtitle {
+    text-align: center;
+    color: var(--accent-blue);
+    margin-top: -2.5rem;
+    margin-bottom: 3.5rem;
+    font-weight: 400;
+}
+.aethra-partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1100px; 
+    margin-inline: auto; 
+    justify-items: center; 
+}
+.aethra-partner-card {
+    background-color: #0F142B;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    width: 100%; 
+    max-width: 340px; 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aethra-partner-card:not(.partner-tba):hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.aethra-partner-card.card-border-blue { border-color: var(--accent-blue); }
+.aethra-partner-card.card-border-violet { border-color: var(--accent-violet); }
+.aethra-partner-card.card-border-green { border-color: var(--accent-green); }
+.aethra-partner-card__label {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-white);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+.card-border-blue .aethra-partner-card__label { background-color: var(--accent-blue); }
+.card-border-violet .aethra-partner-card__label { background-color: var(--accent-violet); }
+.card-border-green .aethra-partner-card__label { background-color: var(--accent-green); }
+.aethra-partner-card__name {
+    font-size: 1.6rem;
+    color: var(--text-white);
+    margin-bottom: 0.25rem;
+}
+.aethra-partner-card__type {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card-border-blue .aethra-partner-card__type { color: var(--accent-blue); }
+.card-border-violet .aethra-partner-card__type { color: var(--accent-violet); }
+.card-border-green .aethra-partner-card__type { color: var(--accent-green); }
+.aethra-partner-card__bio {
+    color: var(--text-light-gray);
+    flex-grow: 1;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+.aethra-partner-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-light-gray);
+}
+.aethra-partner-card__footer span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.aethra-partner-card__fav {
+    background: none;
+    border: none;
+    color: var(--text-light-gray);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.aethra-partner-card.partner-tba {
+    user-select: none;
+}
+.aethra-partner-card.partner-tba > * {
+    filter: blur(5px);
+    pointer-events: none;
+}
+.aethra-partner-card.partner-tba::after {
+    content: 'TBA';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 15vw, 4.5rem);
+    font-weight: 700;
+    opacity: 0.6;
+    z-index: 10;
+}
+.aethra-partner-card.partner-tba.card-border-blue::after { color: var(--accent-blue); }
+.aethra-partner-card.partner-tba.card-border-violet::after { color: var(--accent-violet); }
+.aethra-partner-card.partner-tba.card-border-green::after { color: var(--accent-green); }
+.our-partners-cards .section-subtitle {
+    text-align: center;
+    color: var(--accent-blue);
+    margin-top: 1rem; 
+    margin-bottom: 3.5rem; 
+    font-weight: 400;
+}
+/*
+  Styles for the Unique "Culture / Task Force" Section
+*/
+.culture-section-alt {
+    background-color: var(--bg-light);
+    color: var(--text-dark-gray);
+}
+.culture-section-alt .section-subtitle {
+    text-align: center;
+    color: var(--accent-violet);
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+}
+.culture-alt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    max-width: 800px;
+    margin-inline: auto; 
+}
+.culture-alt-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff;
+    border: 2px solid var(--bg-dark-navy);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.culture-alt-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+.culture-alt-item--reverse {
+    flex-direction: row-reverse;
+}
+.culture-alt-item__icon {
+    font-size: 3rem;
+    color: var(--accent-violet);
+    flex-shrink: 0; 
+}
+.culture-alt-item__text h3 {
+    font-family: var(--font-heading);
+    color: var(--text-dark-gray);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.culture-alt-item__text p {
+    color: var(--text-muted-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+@media (max-width: 767.98px) {
+    .culture-alt-item,
+    .culture-alt-item--reverse {
+        flex-direction: column; 
+        align-items: flex-start; 
+        text-align: left;
+    }
+    .culture-alt-item__icon {
+        margin-bottom: 1rem;
+    }
+}
+/*
+  Styles for the "Future Vision" Section
+*/
+.future-vision-section {
+    background-color: var(--bg-dark-navy); 
+    color: var(--text-light-gray); 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.future-vision-section .section__title {
+    color: var(--text-white);
+}
+.future-vision-section .section-subtitle {
+    color: var(--accent-blue);
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+.future-vision-content {
+    max-width: 800px; 
+    margin-inline: auto; 
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify; 
+}
+.future-vision-content p {
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 767.98px) {
+    .future-vision-content {
+        text-align: left;
+    }
+}
+@keyframes aethra-grow-underline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.aethra-fv-title {
+  position: relative;
+  padding-bottom: 15px; 
+}
+.aethra-fv-title::after {
+  display: none !important;
+}
+.aethra-fv-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-blue); 
+  transform-origin: left;
+  animation: aethra-grow-underline 1s cubic-bezier(0.19, 1, 0.22, 1) 0.3s forwards;
+}
+.aethra-media-kit {
+  background-color: #fff; 
+  padding: 80px 0;
+  text-align: center;
+}
+.aethra-media-card {
+  background-color: var(--bg-dark-navy);
+  color: var(--text-light-gray);
+  border: 2px solid var(--accent-blue);
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 600px;
+  margin: 0 auto; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.aethra-media-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  color: var(--text-white);
+  margin-bottom: 1rem;
+}
+.aethra-media-card p {
+  color: var(--text-light-gray);
+  margin-bottom: 2.5rem;
+  max-width: 45ch; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.aethra-media-btn {
+  background-color: var(--text-muted-dark);
+  border-color: var(--text-muted-dark);
+  color: var(--bg-dark-navy) !important;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.aethra-media-btn:hover {
+  background-color: var(--text-muted-dark);
+  transform: none;
+  box-shadow: none;
+}
+
