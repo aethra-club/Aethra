@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aethra Global Hackathon 2025 - Sponsorship Prospectus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+        }
+
+        .logo-main {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero .tagline {
+            font-size: 2rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .prospectus-label {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .event-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .event-badge {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+
+        .event-badge:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-5px);
+        }
+
+        .hero-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-info-item {
+            text-align: center;
+        }
+
+        .hero-info-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .hero-info-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 800px;
+            line-height: 1.8;
+        }
+        
+        .bg-light {
+            background: #f8f9fa;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+            align-items: start;
+        }
+
+        .about-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            border-left: 5px solid #2c5364;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .about-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #2c5364;
+        }
+
+        .about-box p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .about-box ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-box ul li {
+            padding: 10px 0;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .about-box ul li::before {
+            content: "✓";
+            color: #2c5364;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .event-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+            border-color: #2c5364;
+        }
+
+        .event-image-container {
+            width: 100%;
+            height: 200px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .event-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .event-image-placeholder {
+            font-size: 4rem;
+            color: #ccc;
+        }
+
+        .event-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .event-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .event-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 60px auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #2c5364 0%, #667eea 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            width: calc(50% - 40px);
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: calc(50% + 40px);
+            text-align: left;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            border-color: #2c5364;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #2c5364;
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #2c5364;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -50px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -50px;
+        }
+
+        .timeline-date {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2c5364;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .timeline-desc {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .why-sponsor-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .why-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #2c5364;
+            transition: all 0.3s ease;
+        }
+
+        .why-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .why-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .why-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .tier-grid {
+            display: grid;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .tier-card {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 3px solid #e0e0e0;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-color: #2c5364;
+        }
+        
+        .tier-card.featured {
+            border-color: #2c5364;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+        
+        .tier-badge {
+            position: absolute;
+            top: -15px;
+            right: 50px;
+            background: #2c5364;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tier-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .tier-name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        
+        .tier-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2c5364;
+        }
+        
+        .tier-features {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .tier-features li {
+            padding: 12px 0;
+            color: #444;
+            font-size: 1.05rem;
+        }
+        
+        .tier-features li::before {
+            content: "✓";
+            color: #2c5364;
+            font-weight: 700;
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        .visibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .visibility-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .visibility-item:hover {
+            border-color: #2c5364;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .visibility-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .visibility-item h4 {
+            font-size: 1.2rem;
+            color: #1a1a1a;
+        }
+
+        .prize-needs {
+            background: #f8f9fa;
+            padding: 60px;
+            border-radius: 12px;
+            margin-top: 50px;
+        }
+
+        .prize-needs h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        .prize-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .prize-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .prize-item:hover {
+            border-color: #2c5364;
+            transform: translateY(-5px);
+        }
+
+        .prize-item h4 {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-top: 10px;
+        }
+        
+        .cta-section {
+            background: #1a1a1a;
+            color: white;
+            padding: 100px 40px;
+            text-align: center;
+        }
+
+        .cta-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        
+        .cta-section p {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-box {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 50px;
+            margin-top: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-item {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            opacity: 0.95;
+        }
+        
+        .contact-item strong {
+            color: #64b5f6;
+        }
+
+        .contact-social {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 968px) {
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                margin-left: 60px;
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: -50px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-sponsor-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tier-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .past-event-banner {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .past-event-banner a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .past-event-banner a:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .tagline { font-size: 1.5rem; }
+            .section-title { font-size: 2rem; }
+            section { padding: 50px 0; }
+            .container { padding: 0 20px; }
+            .tier-header { flex-direction: column; gap: 20px; align-items: flex-start; }
+            .past-event-banner a { font-size: 1.1rem; padding: 12px 30px; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+</head>
+<body>
+    <!-- Hero/Cover Page -->
+    <div class="hero">
+        <div class="hero-content">
+            <img src="./images/logo.png" alt="Aethra Logo" class="logo-main">
+            
+            <h1>AETHRA GLOBAL HACKATHON 2025</h1>
+            <p class="tagline">Innovation Without Boundaries</p>
+            
+            <span class="prospectus-label">SPONSORSHIP PROSPECTUS</span>
+            
+            <div class="event-badges">
+                <a href="https://aethra-global-hackathon-2025.devpost.com" class="event-badge" target="_blank">Hackathon</a>
+                <a href="https://aethra-global-vibeathon-2025.devpost.com" class="event-badge" target="_blank">Vibeathon</a>
+                <a href="https://aethra-global-gamethon-2025.devpost.com" class="event-badge" target="_blank">Gamethon</a>
+                <a href="https://aethra-global-pitchathon-2025.devpost.com" class="event-badge" target="_blank">Pitchathon</a>
+                <a href="https://aethra-global-brandathon-2025.devpost.com" class="event-badge" target="_blank">Brandathon</a>
+            </div>
+
+            <div class="hero-info">
+                <div class="hero-info-item">
+                    <div class="hero-info-label">Dates</div>
+                    <div class="hero-info-value">Nov 14 – Dec 31</div>
+                </div>
+                <div class="hero-info-item">
+                    <div class="hero-info-label">Format</div>
+                    <div class="hero-info-value">Fully Online</div>
+                </div>
+                <div class="hero-info-item">
+                    <div class="hero-info-label">Past Experience</div>
+                    <div class="hero-info-value">530+ Participants</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Past Event Banner -->
+    <div class="past-event-banner">
+        <div class="container">
+            <a href="https://aethra-ideathon-2025.devpost.com" target="_blank">
+                Check Out Our Last Event: Aethra Global Ideathon 2025 (530+ Participants) →
+            </a>
+        </div>
+    </div>
+
+    <!-- About the Organization -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">About Aethra</h2>
+            <p class="section-subtitle">A student-led initiative empowering young innovators worldwide to build technology that creates meaningful change.</p>
+            
+            <div class="about-grid">
+                <div class="about-box">
+                    <h3>Who We Are</h3>
+                    <p>Aethra is organized by high-school students with a mission to create accessible, high-impact opportunities for young builders globally. We believe in innovation without boundaries—bringing together diverse talents from coding to creativity.</p>
+                    <ul>
+                        <li>Student-led and student-focused</li>
+                        <li>Global reach with local impact</li>
+                        <li>Experienced organizers and mentors</li>
+                        <li>Strong community partnerships</li>
+                    </ul>
+                </div>
+                
+                <div class="about-box">
+                    <h3>Our Track Record</h3>
+                    <p>Successfully hosted Aethra Global Ideathon 2025 with 530+ participants from multiple countries, demonstrating our ability to mobilize and engage young innovators at scale.</p>
+                    <ul>
+                        <li>530+ participants in previous event</li>
+                        <li>Global participant base</li>
+                        <li>High engagement and completion rates</li>
+                        <li>Proven organizational capacity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Events -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Five Parallel Events</h2>
+            <p class="section-subtitle">Aethra 2025 brings together five unique competitions running simultaneously, each celebrating different forms of innovation and creativity.</p>
+            
+            <div class="events-grid">
+                <a href="https://aethra-global-hackathon-2025.devpost.com" class="event-card" target="_blank">
+                    <div class="event-image-container">
+                        <img src="./images/aethra-hackathon.png" alt="Hackathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="event-image-placeholder" style="display:none;">💻</div>
+                    </div>
+                    <h3>Hackathon</h3>
+                    <p>Real solutions to real problems. Web apps, mobile tools, AI tools - whatever solves a genuine challenge.</p>
+                </a>
+                
+                <a href="https://aethra-global-vibeathon-2025.devpost.com" class="event-card" target="_blank">
+                    <div class="event-image-container">
+                        <img src="./images/aethra-vibeathon.png" alt="Vibeathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="event-image-placeholder" style="display:none;">🎨</div>
+                    </div>
+                    <h3>Vibeathon</h3>
+                    <p>A 48-hour vibecoding sprint where you use AI tools, no-code platforms, and whatever tech gets you there fastest. Just ideas and momentum.</p>
+                </a>
+                
+                <a href="https://aethra-global-gamethon-2025.devpost.com" class="event-card" target="_blank">
+                    <div class="event-image-container">
+                        <img src="./images/aethra-gamethon.png" alt="Gamethon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="event-image-placeholder" style="display:none;">🎮</div>
+                    </div>
+                    <h3>Gamethon</h3>
+                    <p>Challenging game developers, designers, and creative minds worldwide to create innovative games that entertain, educate, and inspire positive change.</p>
+                </a>
+                
+                <a href="https://aethra-global-pitchathon-2025.devpost.com" class="event-card" target="_blank">
+                    <div class="event-image-container">
+                        <img src="./images/aethra-pitchathon.png" alt="Pitchathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="event-image-placeholder" style="display:none;">💼</div>
+                    </div>
+                    <h3>Pitchathon</h3>
+                    <p>Whether you're a student, entrepreneur, artist, scientist, activist, or just a passionate thinker, pitch your boldest ideas to a global audience of organizations, investors, and changemakers.</p>
+                </a>
+                
+                <a href="https://aethra-global-brandathon-2025.devpost.com" class="event-card" target="_blank">
+                    <div class="event-image-container">
+                        <img src="./images/aethra-brandathon.png" alt="Brandathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="event-image-placeholder" style="display:none;">🏷️</div>
+                    </div>
+                    <h3>Brandathon</h3>
+                    <p>invent an imaginary organization, design its logo, name it with flair, and craft a compelling brand story. The world is your canvas.</p>
+                </a>
+            </div>
+
+            <div style="margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="about-box">
+                    <h3>Event Details</h3>
+                    <ul>
+                        <li><strong>Participants:</strong> High school and university students globally</li>
+                        <li><strong>Expected Reach:</strong> 400-500+ participants</li>
+                        <li><strong>Duration:</strong> 6 weeks (Nov 14 – Dec 31)</li>
+                        <li><strong>Tracks:</strong> AI, cybersecurity, creativity, brand strategy, game design, entrepreneurship</li>
+                        <li><strong>Judging:</strong> Industry experts, entrepreneurs, and sponsor representatives</li>
+                        <li><strong>Format:</strong> Fully online with live workshops, mentorship, and community support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section>
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Event Timeline</h2>
+            <p class="section-subtitle" style="text-align: center; margin-left: auto; margin-right: auto;">Six weeks of building, learning, and creating impact across five parallel competitions.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">November 14</div>
+                        <div class="timeline-title">Grand Kickoff</div>
+                        <div class="timeline-desc">Opening ceremony for all five events, team formation, and mentor introductions</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Week 1-2</div>
+                        <div class="timeline-title">Ideation Phase</div>
+                        <div class="timeline-desc">Workshops, mentor sessions, and project proposal development</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Week 3-5</div>
+                        <div class="timeline-title">Building & Creating</div>
+                        <div class="timeline-desc">Active development, design work, and continuous mentorship</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Week 6</div>
+                        <div class="timeline-title">Final Sprint</div>
+                        <div class="timeline-desc">Polish, documentation, pitch preparation, and submissions</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Late December</div>
+                        <div class="timeline-title">Judging Period</div>
+                        <div class="timeline-desc">Comprehensive evaluation by sponsors and industry experts</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 31</div>
+                        <div class="timeline-title">Winner Announcement</div>
+                        <div class="timeline-desc">Awards ceremony and showcase of winning projects</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Sponsor Us -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Why Sponsor Aethra?</h2>
+            <p class="section-subtitle">Partner with us to reach the next generation of innovators, creators, and entrepreneurs across five dynamic competitions.</p>
+            
+            <div class="why-sponsor-grid">
+                <div class="why-item">
+                    <h4>Reach 500+ Young Innovators</h4>
+                    <p>Connect with motivated high school and university students actively building projects across tech, design, business, and creative fields.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Build Brand Visibility</h4>
+                    <p>Six weeks of exposure across our website, social media, Discord community, and direct engagement with future talent.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Discover Future Talent</h4>
+                    <p>Get early access to promising young developers, designers, entrepreneurs, and creators through project reviews and judging.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Network & Engage</h4>
+                    <p>Connect with student founders, educators, mentors, and a global community of innovation-focused individuals.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Promote Your Products</h4>
+                    <p>Showcase your tools, APIs, or services through prizes, free trials, workshops, and direct integration into projects.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Social Impact & Recognition</h4>
+                    <p>Align your brand with youth empowerment, education, and innovation. Gain targeted community recognition and goodwill.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Support Student Leadership</h4>
+                    <p>Back a completely student-run global initiative that demonstrates the power of youth-led innovation and organization.</p>
+                </div>
+                
+                <div class="why-item">
+                    <h4>Multi-Domain Exposure</h4>
+                    <p>Unlike single-track events, reach diverse audiences interested in coding, design, gaming, entrepreneurship, and branding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Tiers -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Sponsorship Tiers</h2>
+            <p class="section-subtitle">Flexible partnership packages designed to meet your goals and maximize your impact.</p>
+            
+            <div class="tier-grid">
+                <div class="tier-card featured">
+                    <div class="tier-badge">Most Popular</div>
+                    <div class="tier-header">
+                        <div class="tier-name">🥇 Platinum Sponsor</div>
+                        <div class="tier-price">₹25,000 / $300</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Large logo on website, posters, and all promotional materials</li>
+                        <li>Speaking slot at opening ceremony</li>
+                        <li>Featured sponsor spotlight on social media (Instagram, LinkedIn, X)</li>
+                        <li>Host a workshop or webinar for participants</li>
+                        <li>Named track or special award category</li>
+                        <li>Judge or mentor participation opportunity</li>
+                        <li>Access to participant resumes (optional, with consent)</li>
+                        <li>Priority logo placement in all communications</li>
+                        <li>Dedicated email announcement to all participants</li>
+                        <li>Inclusion in press releases and media coverage</li>
+                    </ul>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <div class="tier-name">🥈 Gold Sponsor</div>
+                        <div class="tier-price">₹12,000 / $150</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Logo on website and promotional materials</li>
+                        <li>Multiple social media shoutouts across platforms</li>
+                        <li>Provide tools, subscriptions, or product prizes</li>
+                        <li>Workshop or Q&A session opportunity</li>
+                        <li>Featured in participant newsletter</li>
+                        <li>Logo on certificates (optional)</li>
+                        <li>Mention in opening and closing ceremonies</li>
+                        <li>Access to Discord sponsor channel</li>
+                    </ul>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <div class="tier-name">🥉 Silver Sponsor</div>
+                        <div class="tier-price">₹6,000 / $75</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Logo placement on event website</li>
+                        <li>Social media shoutout</li>
+                        <li>Provide discount codes or promotional materials</li>
+                        <li>Recognition in event announcements</li>
+                        <li>Access to participant community</li>
+                        <li>Logo in final showcase presentation</li>
+                    </ul>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <div class="tier-name">🎁 In-Kind Sponsor</div>
+                        <div class="tier-price">No Cash Required</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Provide free trials, API credits, or software access</li>
+                        <li>Offer discount codes or promotional coupons</li>
+                        <li>Donate swag, books, courses, or learning resources</li>
+                        <li>Logo placement on website</li>
+                        <li>Social media recognition</li>
+                        <li>Mention as supporting partner</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <p style="font-size: 1.3rem; color: #555; line-height: 1.8;">
+                    <strong>Custom Packages Available:</strong> Looking for something specific? We're happy to create tailored sponsorship opportunities including API prize tracks, technical challenges, exclusive recruiting events, or unique partnership structures. Let's discuss what works best for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visibility for Sponsors -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Where Your Brand Appears</h2>
+            <p class="section-subtitle">Maximum visibility across all our platforms and communications throughout the entire event.</p>
+            
+            <div class="visibility-grid">
+                <div class="visibility-item">
+                    <div class="visibility-icon">🌐</div>
+                    <h4>Event Website</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">📱</div>
+                    <h4>Social Media</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">🎨</div>
+                    <h4>Posters & Banners</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">📜</div>
+                    <h4>Certificates</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">📧</div>
+                    <h4>Email Updates</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">💬</div>
+                    <h4>Discord Community</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">🏆</div>
+                    <h4>Prize Pages</h4>
+                </div>
+                
+                <div class="visibility-item">
+                    <div class="visibility-icon">📰</div>
+                    <h4>Press Releases</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prize Needs -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">What We're Looking For</h2>
+            <p class="section-subtitle">Multiple ways to support Aethra and make a meaningful impact on young innovators.</p>
+            
+            <div class="prize-needs">
+                <h3>Support Opportunities</h3>
+                
+                <div class="prize-grid">
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">💰</div>
+                        <h4>Cash Sponsorship</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">💻</div>
+                        <h4>Software Credits</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎟️</div>
+                        <h4>Discount Codes</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📚</div>
+                        <h4>Learning Resources</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎓</div>
+                        <h4>Course Subscriptions</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">👥</div>
+                        <h4>Mentorship</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">⚖️</div>
+                        <h4>Judging Panel</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">👕</div>
+                        <h4>Swag & Merch</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎁</div>
+                        <h4>Product Prizes</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🏆</div>
+                        <h4>Special Awards</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🛠️</div>
+                        <h4>API Access</h4>
+                    </div>
+                    
+                    <div class="prize-item">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📖</div>
+                        <h4>Books & Guides</h4>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <p style="font-size: 1.2rem; color: #555; line-height: 1.8;">
+                        Whether you're offering cash prizes, product access, learning opportunities, or expertise, we have flexible ways to integrate your support into the event. Every contribution helps make Aethra possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <img src="./images/logo.png" alt="Aethra Logo" class="cta-logo">
+            <h2>Let's Build the Future Together</h2>
+            <p>Partner with Aethra to empower 500+ young innovators across five exciting competitions.</p>
+            <p><strong>Event starts November 14.</strong> Fast-track approval available for immediate sponsors.</p>
+            
+            <div class="contact-box">
+                <div class="contact-item">
+                    <strong>Email:</strong> anjalidesai0111@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>Event Website:</strong> aethra-global-hackathon-2025.devpost.com
+                </div>
+                <div class="contact-item">
+                    <strong>Previous Event:</strong> aethra-ideathon-2025.devpost.com
+                </div>
+                <div class="contact-item">
+                    <strong>Response Time:</strong> Within 24 hours
+                </div>
+                
+                <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <p style="font-size: 1.1rem; opacity: 0.8;">Ready to sponsor? Reply with your tier of interest and we'll send over the partnership details immediately. Custom packages available upon request.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.event-card, .tier-card, .why-item, .visibility-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
