@@ -625,37 +625,6 @@
             opacity: 1;
             transform: translateY(-3px);
         }
-        
-        @media (max-width: 968px) {
-            .timeline::before {
-                left: 30px;
-            }
-
-            .timeline-item,
-            .timeline-item:nth-child(odd),
-            .timeline-item:nth-child(even) {
-                width: 100%;
-                margin-left: 60px;
-                text-align: left;
-            }
-
-            .timeline-item:nth-child(odd) .timeline-dot,
-            .timeline-item:nth-child(even) .timeline-dot {
-                left: -50px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .why-sponsor-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .tier-features {
-                grid-template-columns: 1fr;
-            }
-        }
 
         .past-event-banner {
             background: #1a1a1a;
@@ -684,15 +653,156 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-
+        
+        @media (max-width: 968px) {
+            .timeline::before {
+                left: 30px;
+            }
+        
+            .timeline-item,
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                margin-left: 60px;
+                text-align: left;
+            }
+        
+            .timeline-item:nth-child(odd) .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: -50px;
+            }
+        
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        
+            .why-sponsor-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .tier-features {
+                grid-template-columns: 1fr;
+            }
+        
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .visibility-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            .prize-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .hero .tagline { font-size: 1.5rem; }
-            .section-title { font-size: 2rem; }
-            section { padding: 50px 0; }
-            .container { padding: 0 20px; }
-            .tier-header { flex-direction: column; gap: 20px; align-items: flex-start; }
-            .past-event-banner a { font-size: 1.1rem; padding: 12px 30px; }
+            .hero h1 { 
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+            .hero .tagline { 
+                font-size: 1.3rem; 
+            }
+            .section-title { 
+                font-size: 2rem; 
+            }
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            section { 
+                padding: 50px 0; 
+            }
+            .container { 
+                padding: 0 20px; 
+            }
+            .tier-header { 
+                flex-direction: column; 
+                gap: 20px; 
+                align-items: flex-start; 
+            }
+            .past-event-banner a { 
+                font-size: 1.1rem; 
+                padding: 12px 30px; 
+            }
+            .logo-main {
+                width: 100px;
+                height: 100px;
+            }
+            .event-badges {
+                gap: 15px;
+            }
+            .event-badge {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+            .hero-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .tier-card {
+                padding: 30px 20px;
+            }
+            .tier-name {
+                font-size: 1.8rem;
+            }
+            .tier-price {
+                font-size: 1.6rem;
+            }
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+            .cta-section p {
+                font-size: 1.1rem;
+            }
+            .contact-box {
+                padding: 30px 20px;
+            }
+            .prize-needs {
+                padding: 40px 20px;
+            }
+            .about-box {
+                padding: 30px 20px;
+            }
+            .event-image-container {
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 { 
+                font-size: 2rem;
+            }
+            .hero .tagline { 
+                font-size: 1.1rem; 
+            }
+            .prospectus-label {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            .section-title { 
+                font-size: 1.7rem; 
+            }
+            .visibility-grid {
+                grid-template-columns: 1fr;
+            }
+            .prize-grid {
+                grid-template-columns: 1fr;
+            }
+            .past-event-banner {
+                padding: 30px 20px;
+            }
+            .past-event-banner a {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            .tier-badge {
+                font-size: 0.75rem;
+                padding: 6px 15px;
+                right: 20px;
+            }
         }
     </style>
     <link rel="icon" type="image/png" href="./images/logo.png">
@@ -781,7 +891,7 @@
             <p class="section-subtitle">Aethra 2025 brings together five unique competitions running simultaneously, each celebrating different forms of innovation and creativity.</p>
             
             <div class="events-grid">
-                <a href="https://aethra-global-hackathon-2025.devpost.com" class="event-card" target="_blank">
+                <a href="https://aethra-global-hackathon-2025.devpost.com" class="event-card">
                     <div class="event-image-container">
                         <img src="./images/aethra-hackathon.png" alt="Hackathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="event-image-placeholder" style="display:none;">💻</div>
@@ -790,7 +900,7 @@
                     <p>Real solutions to real problems. Web apps, mobile tools, AI tools - whatever solves a genuine challenge.</p>
                 </a>
                 
-                <a href="https://aethra-global-vibeathon-2025.devpost.com" class="event-card" target="_blank">
+                <a href="https://aethra-global-vibeathon-2025.devpost.com" class="event-card">
                     <div class="event-image-container">
                         <img src="./images/aethra-vibeathon.png" alt="Vibeathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="event-image-placeholder" style="display:none;">🎨</div>
@@ -799,7 +909,7 @@
                     <p>A 48-hour vibecoding sprint where you use AI tools, no-code platforms, and whatever tech gets you there fastest. Just ideas and momentum.</p>
                 </a>
                 
-                <a href="https://aethra-global-gamethon-2025.devpost.com" class="event-card" target="_blank">
+                <a href="https://aethra-global-gamethon-2025.devpost.com" class="event-card">
                     <div class="event-image-container">
                         <img src="./images/aethra-gamethon.png" alt="Gamethon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="event-image-placeholder" style="display:none;">🎮</div>
@@ -808,7 +918,7 @@
                     <p>Challenging game developers, designers, and creative minds worldwide to create innovative games that entertain, educate, and inspire positive change.</p>
                 </a>
                 
-                <a href="https://aethra-global-pitchathon-2025.devpost.com" class="event-card" target="_blank">
+                <a href="https://aethra-global-pitchathon-2025.devpost.com" class="event-card">
                     <div class="event-image-container">
                         <img src="./images/aethra-pitchathon.png" alt="Pitchathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="event-image-placeholder" style="display:none;">💼</div>
@@ -817,7 +927,7 @@
                     <p>Whether you're a student, entrepreneur, artist, scientist, activist, or just a passionate thinker, pitch your boldest ideas to a global audience of organizations, investors, and changemakers.</p>
                 </a>
                 
-                <a href="https://aethra-global-brandathon-2025.devpost.com" class="event-card" target="_blank">
+                <a href="https://aethra-global-brandathon-2025.devpost.com" class="event-card">
                     <div class="event-image-container">
                         <img src="./images/aethra-brandathon.png" alt="Brandathon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="event-image-placeholder" style="display:none;">🏷️</div>
@@ -1236,3 +1346,5 @@
     </script>
 </body>
 </html>
+
+
